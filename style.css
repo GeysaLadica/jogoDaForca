@@ -1,11 +1,14 @@
 body{
     margin:0px;
+    overflow-x: hidden;
+    width: 100vw;
+
 }
 #main{
     display: grid;
     grid-template-areas: 'nav nav nav nav''header header header header''section section section section''footer footer footer footer';
-    grid-template-rows: 10px 175px 455px 50px;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 10px 150px 495px 50px;
+    grid-template-columns: 24.7vw 24.7vw 24.7vw 24.7vw;
 }
 nav{
     grid-area: nav;
@@ -17,9 +20,44 @@ header{
 }
 section{
     grid-area: section;
-    background-color:rgb(255, 209, 42) ;
+    background-color: rgb(255, 209, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 footer{
     grid-area: footer;
-    background-color: rgb(150, 70, 8) ;
+    background-color: rgb(150, 70, 8);
+}
+#controls{
+    width: 60vw;
+    height: 90px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#controls button{
+    width: 20%;
+    height: 56px;
+    border-radius: 5em;
+    background-color: rgb(195, 12, 232);
+    color: white;
+    font-family: 'Fredoka One', cursive;;
+    font-size: 16pt;
+}
+#controls button:hover{
+    width: 22%;
+    height: 62px;
+    cursor: pointer;
+}
+
+#displayGame{
+    background-color: white;
+    width: 85%;
+    height: 350px;
+    border-radius: 1em;
+    border: 3px solid rgb(195, 12, 232);
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.425);
 }
